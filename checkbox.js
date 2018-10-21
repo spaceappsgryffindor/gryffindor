@@ -33,7 +33,7 @@ closestCamps.forEach((camp, i) => {
 
   const checkbox = document.createElement('input');
   checkbox.setAttribute('type', 'checkbox');
-  const toggleText = "toggle(this.checked, 'water" + i + "', '" + camp.distance + "')";
+  const toggleText = "toggle(this.checked, 'water" + i + "', '" + (Math.round(camp.distance * 100) /100) + "')";
   checkbox.setAttribute('onclick', toggleText);
 
   const slider = document.createElement('span');
